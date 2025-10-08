@@ -45,7 +45,7 @@ In this chapter, you'll explore the essential steps involved in preparing input 
 By the end of Chapter 2, readers will have a clear understanding of how LLMs handle textual data. Since LLMs cannot process raw text directly, the data must be transformed into numerical vectors, known as embeddings, which are compatible with neural networks. You'll grasp how raw text is tokenized into words or subwords, which are then converted into token IDs. The chapter also explains the significance of special tokens like <|unk|> and <|endoftext|>, which help models understand unknown words or text boundaries. The byte pair encoding tokenizer, utilized in models like GPT-2 and GPT-3, is introduced as an efficient way to handle unknown words. Additionally, you'll see how a sliding window approach can generate training examples and how embedding layers in frameworks like PyTorch map tokens to their vector representations. The importance of positional embeddings, both absolute and relative, in enhancing the model's understanding of token sequences is also emphasized, particularly in the context of OpenAI's GPT models.
 </div>
 
-## Chapter 3 :Coding Attention Mechanisms:
+## Chapter 3: Coding Attention Mechanisms
 <div text-align="justify">
 In this chapter, you'll delve into the crucial role of attention mechanisms in neural networks, especially for large language models (LLMs). The chapter begins by exploring why attention mechanisms are used to improve the handling of long sequences in neural models. You'll be introduced to the basic self-attention framework, progressing to more sophisticated versions, and you'll learn how attention helps models capture data dependencies by attending to different parts of the input. The chapter covers implementing a causal attention module that enables LLMs to generate one token at a time, a fundamental feature of autoregressive models. You'll also explore techniques like masking attention weights with dropout to reduce overfitting, and you'll conclude by learning how to stack multiple causal attention modules into a multi-head attention mechanism, a key component of modern transformer architectures.
 
@@ -55,7 +55,7 @@ By the end of the chapter, readers will understand how attention mechanisms tran
 </div>
 
 
-## Chapter 4 : Implementing a GPT model from Scratch To Generate Text 
+## Chapter 4: Implementing a GPT model from Scratch To Generate Text 
 
 <div text-align="justify">
 
@@ -69,7 +69,7 @@ By the end of the chapter, readers will have a clear understanding of how layer 
 
 
 
-## Chapter 5 : Pretraining on Unlabeled Data:
+## Chapter 5: Pretraining on Unlabeled Data
 
 <div text-align="justify">
 
