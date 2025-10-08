@@ -21,13 +21,14 @@ This repository contains the code and resources for building a large language mo
   <li><a href="#chapter-3-coding-attention-mechanisms">Chapter 3: Coding Attention Mechanisms</a></li>
   <li><a href="#chapter-4-implementing-a-gpt-model-from-scratch-to-generate-text">Chapter 4: Implementing a GPT Model from Scratch To Generate Text</a></li>
   <li><a href="#chapter-5-pretraining-on-unlabeled-data">Chapter 5: Pretraining on Unlabeled Data</a></li>
-  <li><a href="#additional-section-finetuning-llms">Additional Section: Finetuning LLMs</a></li>
+  <li><a>Chapter 6: Finetuning for Text Classification</a></li>
+  <li><a>Chapter 7: Finetuning to Follow Instructions</a></li>
 </ol>
 <br>
 
 
 ## Chapter 1: Introduction to Large Language Models
-<div style="text-align: justify">
+<div text-align="justify">
 Chapter 1 of "Build a Large Language Model (from Scratch)" introduces the foundational concepts of large language models (LLMs). It begins by providing a high-level overview of LLMs, their significance in modern AI, and the transformative impact they have had on various applications, such as natural language processing, machine translation, and conversational agents.
 
 The chapter explains the motivation behind creating LLMs from scratch, emphasizing the importance of understanding their inner workings to leverage their full potential. It outlines the scope of the book, detailing the step-by-step approach that will be used to build a functional LLM. 
@@ -38,14 +39,14 @@ By the end of Chapter 1, readers will have a clear understanding of what LLMs ar
 </div>
 
 ## Chapter 2: Working with Text Data
-<div style="text-align: justify">
+<div text-align="justify">
 In this chapter, you'll explore the essential steps involved in preparing input text for training large language models (LLMs). First, you'll learn how to break down text into individual word and subword tokens, which can then be converted into vector representations suitable for input into an LLM. You'll also dive into advanced tokenization techniques such as byte pair encoding (BPE), a method used by prominent models like GPT. The chapter further covers implementing a sampling strategy using a sliding window to generate the necessary input-output pairs for training. Key topics include understanding word embeddings, tokenizing text, converting tokens into token IDs, and the role of special context tokens. Additionally, you'll examine how byte pair encoding improves tokenization and how token embeddings and positional encodings are created and used in LLMs.
 
 By the end of Chapter 2, readers will have a clear understanding of how LLMs handle textual data. Since LLMs cannot process raw text directly, the data must be transformed into numerical vectors, known as embeddings, which are compatible with neural networks. You'll grasp how raw text is tokenized into words or subwords, which are then converted into token IDs. The chapter also explains the significance of special tokens like <|unk|> and <|endoftext|>, which help models understand unknown words or text boundaries. The byte pair encoding tokenizer, utilized in models like GPT-2 and GPT-3, is introduced as an efficient way to handle unknown words. Additionally, you'll see how a sliding window approach can generate training examples and how embedding layers in frameworks like PyTorch map tokens to their vector representations. The importance of positional embeddings, both absolute and relative, in enhancing the model's understanding of token sequences is also emphasized, particularly in the context of OpenAI's GPT models.
 </div>
 
 ## Chapter 3 :Coding Attention Mechanisms:
-<div style="text-align: justify">
+<div text-align="justify">
 In this chapter, you'll delve into the crucial role of attention mechanisms in neural networks, especially for large language models (LLMs). The chapter begins by exploring why attention mechanisms are used to improve the handling of long sequences in neural models. You'll be introduced to the basic self-attention framework, progressing to more sophisticated versions, and you'll learn how attention helps models capture data dependencies by attending to different parts of the input. The chapter covers implementing a causal attention module that enables LLMs to generate one token at a time, a fundamental feature of autoregressive models. You'll also explore techniques like masking attention weights with dropout to reduce overfitting, and you'll conclude by learning how to stack multiple causal attention modules into a multi-head attention mechanism, a key component of modern transformer architectures.
 
 Key topics include understanding the problem of modeling long sequences, capturing data dependencies using attention mechanisms, and implementing self-attention with trainable weights. You'll learn step-by-step how to compute attention weights and implement a compact self-attention Python class. The chapter also covers the application of causal attention masks to hide future tokens, masking additional attention weights with dropout, and implementing a causal attention class. It concludes with extending single-head attention to multi-head attention, explaining how multiple single-head attention layers can be stacked and how to implement multi-head attention with weight splits.
@@ -56,7 +57,7 @@ By the end of the chapter, readers will understand how attention mechanisms tran
 
 ## Chapter 4 : Implementing a GPT model from Scratch To Generate Text 
 
-<div style="text-align: justify">
+<div text-align="justify">
 
 In this chapter, you'll focus on coding a GPT-like large language model (LLM) capable of generating human-like text. The chapter covers several key topics, starting with the implementation of an LLM architecture, including normalizing layer activations to stabilize training. You'll learn about adding shortcut connections in deep neural networks to enhance training effectiveness, and you'll explore the construction of transformer blocks essential for creating GPT models of various sizes. Additionally, you'll compute the number of parameters and storage requirements for GPT models to understand their scale and complexity.
 
@@ -70,7 +71,7 @@ By the end of the chapter, readers will have a clear understanding of how layer 
 
 ## Chapter 5 : Pretraining on Unlabeled Data:
 
-<div id="text-align: justify">
+<div text-align="justify">
 
 In this chapter, you'll learn how to assess and enhance the quality of text generated by large language models (LLMs) during training. Key topics include computing training and validation set losses to evaluate the model's performance, implementing a training function for pretraining the LLM, and saving and loading model weights to continue or resume training. Additionally, you'll explore how to load pretrained weights from OpenAI to leverage existing knowledge and accelerate model development.
 
